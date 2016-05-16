@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hongshi.pullToRefreshAndLoad.View.PullToRefreshLayout
+        android:id="@+id/pull_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--下拉头-->
+        <include
+            layout="@layout/refresh_head"/>
+
+        <!--中间显示的内容有：ListView、GridView、RecyclerView、ScrollView、WebView、ImageView、TextView
+        （只能设置一个)-->
+        <com.hongshi.pullToRefreshAndLoad.pullableview.PullableListView
+            android:id="@+id/pull_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <!--上拉头-->
+        <include
+            layout="@layout/load_more"/>
+
+    </com.hongshi.pullToRefreshAndLoad.View.PullToRefreshLayout>
+
+</RelativeLayout>
