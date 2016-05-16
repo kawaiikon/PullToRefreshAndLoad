@@ -61,6 +61,11 @@ public class MainActivity extends AppCompatActivity {
         mPullLayout.setRefresh_text_color(R.color.white);
         //设置加载更多字体颜色
         mPullLayout.setLoad_text_color(R.color.white);
+
+        //自动下拉
+        mPullLayout.autoRefresh();
+        //自动上拉
+        mPullLayout.autoLoad();
         //设置调用此方法监听下拉上拉
         mPullLayout.setOnRefreshListener(new PullToRefreshLayout.OnRefreshListener() {
             //下拉刷新时调用
